@@ -1,0 +1,64 @@
+.whot-section {
+  padding: 170px 0px 170px 0px;
+  background-color: $apply-bg;
+}
+
+.whot-flex__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.whot-title {
+  max-width: 548px;
+  margin-bottom: 20px;
+  @include allText(40px, 700, normal, $site-text);
+}
+
+.whot-text {
+  margin-top: 20px;
+  max-width: 468px;
+  @include allText(16px, 600, normal, $site-text);
+  opacity: 0.7;
+}
+
+.whot-banner {
+  max-width: 642px;
+}
+
+.whot-banner img {
+  width: 100%;
+}
+
+@media (max-width: 968px) {
+  .whot-flex__container {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .whot-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .whot-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .whot-section {
+    padding: 90px 0px 56px 0px;
+  }
+
+  .whot-title {
+    font-size: 32px;
+  }
+}
