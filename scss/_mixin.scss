@@ -1,0 +1,19 @@
+@mixin flexes($justify, $align, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin allBtns() {
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: $btn-bg;
+}
+
+@mixin allText($size, $weight, $height, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}
